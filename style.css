@@ -23,6 +23,12 @@ span{
     color: rgb(255, 255, 255);
     border-radius: 20px;
 }
+#Insta{
+    background-color: rgb(236, 75, 236);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    
+}
 #YT{
     background-color: red;
     color: white;
@@ -44,7 +50,7 @@ h2{
     padding: 5px;
 }
 hr{
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     border-radius: 6px;
 }
 div{
