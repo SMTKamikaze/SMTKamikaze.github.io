@@ -1,55 +1,139 @@
+/* Catppuccin Mocha Palette */
+:root {
+  --background: #282a36;
+  --mantle: #44475a;
+  --crust: #6272a4;
+  --text: #000000; /* Changed to black for darker text */
+  --subtext1: #bd93f9;
+  --subtext0: #ff79c6;
+  --overlay2: #ffb86c;
+  --overlay1: #ff5555;
+  --overlay0: #50fa7b;
+  --surface2: #8be9fd;
+  --surface1: #f1fa8c;
+  --surface0: #ff79c6;
+  --base: #bd93f9;
+}
 body {
-  background-color: rgb(27, 29, 47);
-  color: rgb(69, 52, 223);
+  background-color: var(--background);
+  color: var(--text);
+  font-family: sans-serif;
+}
+h1,
+h2 {
+  color: var(--base);
+}
+a {
+  color: var(--crust);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--mantle);
 }
 .center {
   text-align: center;
 }
-
+img {
+  border: 4px solid var(--surface0);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Previous styles - you can keep or modify these as needed */
+.center {
+  text-align: center;
+}
 h1 {
-  background-color: rgb(101, 178, 241);
+  background-color: var(--base);
+  color: white;
   border-radius: 20px;
   margin-left: 70px;
   margin-right: 70px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
 }
 span {
-  background-color: aquamarine;
+  background-color: var(--crust); /* Use Catppuccin color */
+  padding: 5px;
+  border-radius: 5px;
 }
-
 #DC {
-  background-color: rgb(66, 63, 240);
-  color: rgb(255, 255, 255);
+  background-color: var(--surface2); /* Use Catppuccin color */
+  color: var(--text); /* Use Catppuccin color */
   border-radius: 20px;
-}
-#Insta {
-  background-color: rgb(236, 75, 236);
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
+  padding: 10px;
 }
 #YT {
-  background-color: red;
-  color: white;
+  background-color: var(--crust); /* Use Catppuccin color */
+  color: var(--text); /* Use Catppuccin color */
   border-radius: 20px;
+  padding: 10px;
 }
 #TW {
-  background-color: rgb(10, 10, 10);
-  color: white;
+  background-color: var(--mantle); /* Use Catppuccin color */
+  color: var(--text); /* Use Catppuccin color */
   border-radius: 20px;
+  padding: 10px;
 }
 h2 {
-  background-color: aqua;
+  background-color: var(--surface1); /* Use Catppuccin color */
+  color: var(--text); /* Use Catppuccin color */
   margin: 40px;
   padding: 20px;
   border-radius: 20px;
 }
-
 * {
   padding: 5px;
 }
 hr {
-  background-color: rgb(255, 255, 255);
-  border-radius: 6px;
+  border: none;
+  height: 1px;
+  background-color: var(--surface0);
+  margin: 20px 0;
 }
-div {
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#DC,
+#YT,
+#TW {
+  display: inline-block;
+}
+
+#DC,
+#YT,
+#TW {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#DC:hover {
+  background-color: #5865f2;
+  color: white;
+}
+
+#YT:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+#TW:hover {
+  background-color: #000000;
+  color: white;
+}
+
+#IG {
+  background-color: var(--surface0);
+  color: var(--text);
+  border-radius: 20px;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#IG:hover {
+  background-color: #e1306c;
+  color: white;
 }
